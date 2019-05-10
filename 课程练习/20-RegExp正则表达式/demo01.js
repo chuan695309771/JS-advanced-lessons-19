@@ -7,3 +7,4 @@ console.log("a fAt bat ,a faT cat".match(reg1));
 
 var str1 = "fat Fat bat cat jkdfdj llo";
 console.log(str1.match(reg1));
+
