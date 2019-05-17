@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://graph.baidu.com/resource/101d870c0b2cf6e87192c01558053922.jpg" alt="">
+    <p >love lulu</p>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    $("img").mouseover(function(){
+        $(this).css("border","1px solid red");
+    })
+    $("img").mouseleave(function(){
+        $(this).css("border","1px solid blue");
+    })
+    $("p").mouseover(function(){
+        $(this).css("display","block");
+    })
+    $("p").mouseleave(function(){
+        $(this).css("display","none");
+    })
+</script>
+</html>
