@@ -27,6 +27,7 @@
         </tr>
     </table>
 </body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
     /*
         $(选择器).val();
@@ -42,6 +43,22 @@
         }
         else{
             $(".error").remove();
+        }
+    })
+    /*
+
+        val()用于设置或者获取表单元素的value值
+        html()用于设置或者获取双标记标签元素的标签内部的html内容
+        css() 用于设置选中元素的样式css("样式名"，"样式值")
+    */
+    $("#username").blur(function(){
+        var inputVal = $(this).val();
+        if(inputVal == ""){
+            $(".error").html("用户名不能为空");
+            $(".error").css({
+                "color":"purple",
+                "font-size":"30px"
+            });
         }
     })
 </script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .imgborder{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://graph.baidu.com/resource/101d870c0b2cf6e87192c01558053922.jpg" id="img1" class="bg " alt="">
+    <button id="btn">改变属性</button>
+    <button id="btn1">改变class</button>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    $("#btn").click(function(){
+        $("#img1").attr("src","https://graph.baidu.com/resource/101ddd99b4fb32499ea9501558313170.jpg");
+        $("#img1").attr("title","这就是一张照片");
+        alert($("#img1").attr("title"));
+
+        //移除特定属性
+        $("#img1").removeAttr("title")
+    })
+    $("#btn1").click(function(){
+        $("#img1").addClass("imgborder");
+        $("#img1").removeClass("imgborder");
+    })
+</script>
+</html>
